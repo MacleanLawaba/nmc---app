@@ -1,11 +1,13 @@
 import React from "react";
+import "../LoginForm.css";
+import "./signupForm.css";
 
 const SignupForm = () => {
   return (
     <>
       <div className="signupContainer">
-        <h2>Sign Up</h2>
         <form action="@" className="signup-form">
+          <h2>Sign Up</h2>
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
@@ -42,6 +44,15 @@ const SignupForm = () => {
               require
             />
           </div>
+          <button type="submit" className="login-button">
+            Register
+          </button>
+          <p className="register-link">
+            Alread have an account &nbsp;
+            <a href="@" className="register-here">
+              Login
+            </a>
+          </p>
         </form>
       </div>
     </>
